@@ -118,18 +118,26 @@ a:hover {
   color: var(--white);
 }
 
-/* Cards */
+/* Cards - Mobile First */
 .card {
   background: var(--white);
   border-radius: 8px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 2px 8px var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 16px var(--shadow);
+@media (min-width: 769px) {
+  .card {
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px var(--shadow);
+  }
 }
 
 /* Forms */
@@ -168,23 +176,159 @@ a:hover {
   min-height: 120px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Mobile-First: Base styles are mobile, desktop uses media queries */
+/* Buttons - Mobile First (48px min height for tap targets) */
+.btn {
+  min-height: 48px;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .btn {
+    padding: 0.875rem 2rem;
+  }
+}
+
+/* Sections - Reduced padding on mobile */
+.section {
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 769px) {
+  .section {
+    padding: 4rem 0;
+  }
+}
+
+/* Typography - Mobile First */
+h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 0.875rem;
+  line-height: 1.6;
+}
+
+ul, ol {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+li {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 769px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Container - Mobile First */
+.container {
+  padding: 0 1rem;
+}
+
+@media (min-width: 769px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+  }
+}
+
+/* Mobile Accordion Wrapper - Show accordion on mobile, full content on desktop */
+.mobile-accordion-wrapper {
+  display: block;
+}
+
+.mobile-accordion-content {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .mobile-accordion-wrapper .accordion {
+    border: none;
+    margin-bottom: 0;
   }
 
-  .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
+  .mobile-accordion-wrapper .accordion-header {
+    display: none;
+  }
+
+  .mobile-accordion-wrapper .accordion-content {
+    max-height: none !important;
+    display: block !important;
+  }
+
+  .mobile-accordion-wrapper .accordion-body {
+    padding: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* Additional mobile-specific overrides */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Center headings only, left-align body text */
+  h1, h2, h3 {
+    text-align: center;
+  }
+  
+  p, li, span, div {
+    text-align: left;
+  }
+
+  /* Reduce margins on mobile */
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Optimize grid layouts for mobile */
+  .trust-feature-card,
+  .product-card {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -270,22 +414,30 @@ a:hover {
   opacity: 0;
 }
 
-/* Product Card Enhancements */
+/* Product Card Enhancements - Mobile First */
 .product-card {
   position: relative;
   overflow: hidden;
   background: var(--white);
   border-radius: 12px;
   padding: 0;
-  box-shadow: 0 4px 12px var(--shadow);
+  box-shadow: 0 2px 8px var(--shadow);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
+  margin-bottom: 1.5rem;
 }
 
-.product-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(44, 95, 141, 0.15);
+@media (min-width: 769px) {
+  .product-card {
+    box-shadow: 0 4px 12px var(--shadow);
+    margin-bottom: 0;
+  }
+
+  .product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(44, 95, 141, 0.15);
+  }
 }
 
 .product-image-container {
@@ -336,7 +488,13 @@ a:hover {
 }
 
 .product-content {
-  padding: 1.5rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 769px) {
+  .product-content {
+    padding: 1.5rem;
+  }
 }
 
 .trust-badge {
@@ -370,14 +528,22 @@ a:hover {
   animation: pulse 2s ease-in-out infinite;
 }
 
-/* Trust Section Styles */
+/* Trust Section Styles - Mobile First */
 .trust-section {
   background: linear-gradient(135deg, var(--white) 0%, var(--soft-blue) 100%);
-  border-radius: 16px;
-  padding: 3rem;
-  box-shadow: 0 8px 24px rgba(44, 95, 141, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(44, 95, 141, 0.1);
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .trust-section {
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 8px 24px rgba(44, 95, 141, 0.1);
+  }
 }
 
 .trust-section::before {
@@ -395,7 +561,7 @@ a:hover {
 .trust-feature-card {
   background: var(--white);
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid transparent;
@@ -404,6 +570,20 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 769px) {
+  .trust-feature-card {
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+
+  .trust-feature-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 12px 24px rgba(44, 95, 141, 0.15);
+  }
 }
 
 .trust-feature-card:hover {
@@ -447,6 +627,120 @@ a:hover {
   color: var(--text-gray);
   line-height: 1.6;
   margin: 0;
+  text-align: left;
+}
+
+/* Accordion Component */
+.accordion {
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 1.25rem 1rem;
+  background: var(--white);
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 48px;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+  background-color: var(--soft-blue);
+}
+
+.accordion-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  flex: 1;
+  text-align: left;
+}
+
+.accordion-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-blue);
+  transition: transform 0.3s ease;
+}
+
+.accordion-icon.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content.open {
+  max-height: 5000px;
+}
+
+.accordion-body {
+  padding: 0 1rem 1.25rem;
+  text-align: left;
+}
+
+.accordion-body p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.accordion-body ul {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+/* Sticky WhatsApp Button - Mobile Only */
+.whatsapp-sticky {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-sticky {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .whatsapp-sticky:active {
+    transform: scale(0.95);
+  }
+
+  .whatsapp-sticky svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Add padding to main content to prevent overlap */
+  .main-content {
+    padding-bottom: 100px;
+  }
 }
 
 /* Page Banner */
@@ -496,38 +790,79 @@ a:hover {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 768px) {
+/* Page Banner - Mobile First (Shorter on mobile) */
+.page-banner {
+  height: 200px;
+}
+
+.page-banner h1 {
+  font-size: 1.5rem;
+}
+
+.page-banner p {
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 769px) {
   .page-banner {
-    height: 250px;
+    height: 300px;
   }
 
   .page-banner h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .page-banner p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
-/* Featured Products Grid */
+/* Featured Products Grid - Mobile First */
 .featured-products-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-bottom: 3rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 480px) {
   .featured-products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .featured-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Product Grid - Mobile First */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 480px) {
+  .products-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

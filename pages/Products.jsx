@@ -295,11 +295,7 @@ function Products() {
                 </p>
               </div>
 
-              <div style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', 
-                gap: '2rem' 
-              }}>
+              <div className="products-grid">
                 {category.items.map((product, productIndex) => (
                   <div
                     key={productIndex}
@@ -404,10 +400,7 @@ function Products() {
             </div>
             
             <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
-              gap: '2rem',
-              marginBottom: '3rem'
+              marginBottom: '2rem'
             }}>
               <div className="trust-feature-card animate-delay-1 animate-fade-in-up">
                 <div className="trust-icon-wrapper">

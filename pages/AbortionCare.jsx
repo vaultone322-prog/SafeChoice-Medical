@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import Accordion from '../components/Accordion'
 
 function AbortionCare() {
   const [expandedSection, setExpandedSection] = useState(null)
@@ -198,18 +199,15 @@ function AbortionCare() {
                   If your symptoms are severe, or if you develop any signs that require emergency care, do not take any 
                   more medication. Instead, seek immediate assessment from a healthcare professional or call emergency services.
                 </p>
+                </div>
               </div>
+            </Accordion>
             </div>
 
             {/* Bleeding Information */}
-            <div className="card animate-fade-in-up" style={{ marginBottom: '3rem' }}>
-              <h2 style={{ 
-                color: 'var(--primary-blue)', 
-                marginBottom: '1.5rem',
-                fontSize: '2rem'
-              }}>
-                Bleeding During an Early Medical Abortion (EMA)
-              </h2>
+            <div className="mobile-accordion-wrapper animate-fade-in-up" style={{ marginBottom: '2rem' }}>
+              <Accordion title="Bleeding During an Early Medical Abortion (EMA)">
+                <div className="card" style={{ marginBottom: 0, padding: '1.5rem' }}>
               <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
                 Bleeding is a normal part of the medical abortion process. Some patients do bleed after taking the 
                 first tablet (Mifepristone). If this happens we still recommend that you take stage 2 unless your 
@@ -295,18 +293,15 @@ function AbortionCare() {
                   Some people may experience a brief episode of pain, followed by a sudden gush of blood or a clot, even weeks later. 
                   If this continues, please contact us.
                 </p>
+                </div>
               </div>
+            </Accordion>
             </div>
 
             {/* Pain Management */}
-            <div className="card animate-fade-in-up" style={{ marginBottom: '3rem' }}>
-              <h2 style={{ 
-                color: 'var(--primary-blue)', 
-                marginBottom: '1.5rem',
-                fontSize: '2rem'
-              }}>
-                Pain During an Early Medical Abortion
-              </h2>
+            <div className="mobile-accordion-wrapper animate-fade-in-up" style={{ marginBottom: '2rem' }}>
+              <Accordion title="Pain During an Early Medical Abortion">
+                <div className="card" style={{ marginBottom: 0, padding: '1.5rem' }}>
               <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
                 Most people are able to continue with everyday activities following the first pill, called Mifepristone.
               </p>

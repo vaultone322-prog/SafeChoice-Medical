@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Accordion from '../components/Accordion'
 
 function Home() {
   return (
