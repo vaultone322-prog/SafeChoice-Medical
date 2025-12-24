@@ -133,215 +133,212 @@ function AbortionCare() {
             </div>
 
             {/* What to Expect */}
-            <div className="card animate-fade-in-up" style={{ marginBottom: '3rem' }}>
-              <h2 style={{ 
-                color: 'var(--primary-blue)', 
-                marginBottom: '1.5rem',
-                fontSize: '2rem'
-              }}>
-                What to Expect When Taking Abortion Pills
-              </h2>
-              <p style={{ fontSize: '1.125rem', marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
-                Everyone is different, so how you feel may be different to someone else.
-              </p>
-              <p style={{ marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
-                The abortion is usually complete within about <strong>4-6 hours</strong> after taking misoprostol 
-                (stage 2 or 3). However, for some, it may take a little longer. Bleeding may continue for several days, 
-                and light bleeding or spotting may even continue up until your next period, this is completely normal, 
-                even after the abortion is complete.
-              </p>
+            <div className="mobile-accordion-wrapper animate-fade-in-up" style={{ marginBottom: '2rem' }}>
+              <Accordion title="What to Expect When Taking Abortion Pills">
+                <div>
+                  <p style={{ fontSize: '1.125rem', marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
+                    Everyone is different, so how you feel may be different to someone else.
+                  </p>
+                  <p style={{ marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
+                    The abortion is usually complete within about <strong>4-6 hours</strong> after taking misoprostol 
+                    (stage 2 or 3). However, for some, it may take a little longer. Bleeding may continue for several days, 
+                    and light bleeding or spotting may even continue up until your next period, this is completely normal, 
+                    even after the abortion is complete.
+                  </p>
 
-              <div style={{ 
-                marginTop: '2rem',
-                padding: '1.5rem', 
-                backgroundColor: 'var(--light-green)', 
-                borderRadius: '8px',
-                borderLeft: '4px solid var(--accent-green)'
-              }}>
-                <h3 style={{ 
-                  color: 'var(--primary-blue)', 
-                  marginBottom: '1rem',
-                  fontSize: '1.25rem'
-                }}>
-                  Potential Risks/Side Effects of Abortion Pills
-                </h3>
-                <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
-                  Abortion pills are very safe. As with any medication there are some potential risks and side effects. 
-                  We will talk to you about these possible complications during your consultation. The main risks or 
-                  side effects of abortion pills include:
-                </p>
-                <ul style={{ 
-                  color: 'var(--text-gray)', 
-                  lineHeight: '2',
-                  paddingLeft: '1.5rem'
-                }}>
-                  <li>Excessive vaginal bleeding</li>
-                  <li>Incomplete abortion</li>
-                  <li>Infection</li>
-                  <li>Allergic reactions</li>
-                  <li>A feeling of light-headedness</li>
-                  <li>Feeling feverish</li>
-                  <li>High temperature</li>
-                  <li>Diarrhoea</li>
-                  <li>Nausea or sickness</li>
-                </ul>
-                <p style={{ marginTop: '1rem', color: 'var(--text-gray)' }}>
-                  These side effects usually settle within 24 hours of taking the second or third stage of the medication. 
-                  Sometimes, you will experience similar side effects if you have started contraception after the abortion. 
-                  However, if the symptoms continue or worsen, please get in touch with us.
-                </p>
-                <p style={{ 
-                  marginTop: '1rem', 
-                  color: 'var(--primary-blue)', 
-                  fontWeight: '600',
-                  fontSize: '0.9375rem'
-                }}>
-                  If your symptoms are severe, or if you develop any signs that require emergency care, do not take any 
-                  more medication. Instead, seek immediate assessment from a healthcare professional or call emergency services.
-                </p>
+                  <div style={{ 
+                    marginTop: '2rem',
+                    padding: '1.5rem', 
+                    backgroundColor: 'var(--light-green)', 
+                    borderRadius: '8px',
+                    borderLeft: '4px solid var(--accent-green)'
+                  }}>
+                    <h3 style={{ 
+                      color: 'var(--primary-blue)', 
+                      marginBottom: '1rem',
+                      fontSize: '1.25rem'
+                    }}>
+                      Potential Risks/Side Effects of Abortion Pills
+                    </h3>
+                    <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
+                      Abortion pills are very safe. As with any medication there are some potential risks and side effects. 
+                      We will talk to you about these possible complications during your consultation. The main risks or 
+                      side effects of abortion pills include:
+                    </p>
+                    <ul style={{ 
+                      color: 'var(--text-gray)', 
+                      lineHeight: '2',
+                      paddingLeft: '1.5rem'
+                    }}>
+                      <li>Excessive vaginal bleeding</li>
+                      <li>Incomplete abortion</li>
+                      <li>Infection</li>
+                      <li>Allergic reactions</li>
+                      <li>A feeling of light-headedness</li>
+                      <li>Feeling feverish</li>
+                      <li>High temperature</li>
+                      <li>Diarrhoea</li>
+                      <li>Nausea or sickness</li>
+                    </ul>
+                    <p style={{ marginTop: '1rem', color: 'var(--text-gray)' }}>
+                      These side effects usually settle within 24 hours of taking the second or third stage of the medication. 
+                      Sometimes, you will experience similar side effects if you have started contraception after the abortion. 
+                      However, if the symptoms continue or worsen, please get in touch with us.
+                    </p>
+                    <p style={{ 
+                      marginTop: '1rem', 
+                      color: 'var(--primary-blue)', 
+                      fontWeight: '600',
+                      fontSize: '0.9375rem'
+                    }}>
+                      If your symptoms are severe, or if you develop any signs that require emergency care, do not take any 
+                      more medication. Instead, seek immediate assessment from a healthcare professional or call emergency services.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Accordion>
+              </Accordion>
             </div>
 
             {/* Bleeding Information */}
             <div className="mobile-accordion-wrapper animate-fade-in-up" style={{ marginBottom: '2rem' }}>
               <Accordion title="Bleeding During an Early Medical Abortion (EMA)">
-                <div className="card" style={{ marginBottom: 0, padding: '1.5rem' }}>
-              <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
-                Bleeding is a normal part of the medical abortion process. Some patients do bleed after taking the 
-                first tablet (Mifepristone). If this happens we still recommend that you take stage 2 unless your 
-                bleeding is very heavy.
-              </p>
-              <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
-                Bleeding usually begins <strong>2 to 4 hours</strong> after taking Misoprostol (stage 2 or 3). 
-                However, it can be quite normal for this to be delayed.
-              </p>
-              <p style={{ marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
-                If you have had no bleeding at <strong>48 hours</strong> after all the abortion tablets have been taken, 
-                please contact us. Some patients may be advised to contact us within 24 hours if they have not bled. 
-                This only applies if the nurse or midwife in clinic has advised you specifically of this.
-              </p>
+                <div>
+                  <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
+                    Bleeding is a normal part of the medical abortion process. Some patients do bleed after taking the 
+                    first tablet (Mifepristone). If this happens we still recommend that you take stage 2 unless your 
+                    bleeding is very heavy.
+                  </p>
+                  <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
+                    Bleeding usually begins <strong>2 to 4 hours</strong> after taking Misoprostol (stage 2 or 3). 
+                    However, it can be quite normal for this to be delayed.
+                  </p>
+                  <p style={{ marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
+                    If you have had no bleeding at <strong>48 hours</strong> after all the abortion tablets have been taken, 
+                    please contact us. Some patients may be advised to contact us within 24 hours if they have not bled. 
+                    This only applies if the nurse or midwife in clinic has advised you specifically of this.
+                  </p>
 
-              <div style={{ 
-                padding: '1.5rem', 
-                backgroundColor: 'var(--soft-blue)', 
-                borderRadius: '8px',
-                marginBottom: '1.5rem'
-              }}>
-                <h3 style={{ 
-                  color: 'var(--primary-blue)', 
-                  marginBottom: '1rem',
-                  fontSize: '1.25rem'
-                }}>
-                  What to Expect with Bleeding
-                </h3>
-                <ul style={{ 
-                  color: 'var(--text-gray)', 
-                  lineHeight: '2',
-                  paddingLeft: '1.5rem',
-                  marginBottom: '1rem'
-                }}>
-                  <li>You might experience light, moderate, or heavy bleeding</li>
-                  <li>Some people pass clots, these can vary in size but should not be larger than a lemon</li>
-                  <li>Once the pregnancy passes, the bleeding should start to ease</li>
-                  <li>Light bleeding or spotting can continue for up to two weeks and occasionally until your next period</li>
-                </ul>
-                <p style={{ 
-                  color: 'var(--text-gray)', 
-                  fontWeight: '500',
-                  marginBottom: '0.5rem'
-                }}>
-                  <strong>Important:</strong> Monitor your bleeding. It is preferable to use sanitary towels, not tampons 
-                  or menstrual cups, during and after treatment, as this will make it easier for you to monitor your bleeding.
-                </p>
-              </div>
+                  <div style={{ 
+                    padding: '1.5rem', 
+                    backgroundColor: 'var(--soft-blue)', 
+                    borderRadius: '8px',
+                    marginBottom: '1.5rem'
+                  }}>
+                    <h3 style={{ 
+                      color: 'var(--primary-blue)', 
+                      marginBottom: '1rem',
+                      fontSize: '1.25rem'
+                    }}>
+                      What to Expect with Bleeding
+                    </h3>
+                    <ul style={{ 
+                      color: 'var(--text-gray)', 
+                      lineHeight: '2',
+                      paddingLeft: '1.5rem',
+                      marginBottom: '1rem'
+                    }}>
+                      <li>You might experience light, moderate, or heavy bleeding</li>
+                      <li>Some people pass clots, these can vary in size but should not be larger than a lemon</li>
+                      <li>Once the pregnancy passes, the bleeding should start to ease</li>
+                      <li>Light bleeding or spotting can continue for up to two weeks and occasionally until your next period</li>
+                    </ul>
+                    <p style={{ 
+                      color: 'var(--text-gray)', 
+                      fontWeight: '500',
+                      marginBottom: '0.5rem'
+                    }}>
+                      <strong>Important:</strong> Monitor your bleeding. It is preferable to use sanitary towels, not tampons 
+                      or menstrual cups, during and after treatment, as this will make it easier for you to monitor your bleeding.
+                    </p>
+                  </div>
 
-              <div style={{ 
-                padding: '1.5rem', 
-                backgroundColor: 'var(--light-green)', 
-                borderRadius: '8px',
-                borderLeft: '4px solid var(--accent-green)'
-              }}>
-                <h3 style={{ 
-                  color: 'var(--primary-blue)', 
-                  marginBottom: '1rem',
-                  fontSize: '1.25rem'
-                }}>
-                  When to Contact Us
-                </h3>
-                <p style={{ marginBottom: '0.75rem', color: 'var(--text-gray)' }}>
-                  Contact us if:
-                </p>
-                <ul style={{ 
-                  color: 'var(--text-gray)', 
-                  lineHeight: '2',
-                  paddingLeft: '1.5rem',
-                  marginBottom: '1rem'
-                }}>
-                  <li>You haven't bled at all or have only light spotting 48 hours after taking misoprostol (or 24 hours if specifically advised)</li>
-                  <li>You're soaking (Heavy) 2 maxi pads per hour for 2 hours in a row</li>
-                </ul>
-                <p style={{ 
-                  color: 'var(--primary-blue)', 
-                  fontWeight: '600',
-                  fontSize: '0.9375rem'
-                }}>
-                  Call emergency services immediately if you feel unwell and are experiencing extremely heavy bleeding (known as "flooding").
-                </p>
-                <p style={{ marginTop: '1rem', color: 'var(--text-gray)', fontSize: '0.9375rem' }}>
-                  Some people may experience a brief episode of pain, followed by a sudden gush of blood or a clot, even weeks later. 
-                  If this continues, please contact us.
-                </p>
+                  <div style={{ 
+                    padding: '1.5rem', 
+                    backgroundColor: 'var(--light-green)', 
+                    borderRadius: '8px',
+                    borderLeft: '4px solid var(--accent-green)'
+                  }}>
+                    <h3 style={{ 
+                      color: 'var(--primary-blue)', 
+                      marginBottom: '1rem',
+                      fontSize: '1.25rem'
+                    }}>
+                      When to Contact Us
+                    </h3>
+                    <p style={{ marginBottom: '0.75rem', color: 'var(--text-gray)' }}>
+                      Contact us if:
+                    </p>
+                    <ul style={{ 
+                      color: 'var(--text-gray)', 
+                      lineHeight: '2',
+                      paddingLeft: '1.5rem',
+                      marginBottom: '1rem'
+                    }}>
+                      <li>You haven't bled at all or have only light spotting 48 hours after taking misoprostol (or 24 hours if specifically advised)</li>
+                      <li>You're soaking (Heavy) 2 maxi pads per hour for 2 hours in a row</li>
+                    </ul>
+                    <p style={{ 
+                      color: 'var(--primary-blue)', 
+                      fontWeight: '600',
+                      fontSize: '0.9375rem'
+                    }}>
+                      Call emergency services immediately if you feel unwell and are experiencing extremely heavy bleeding (known as "flooding").
+                    </p>
+                    <p style={{ marginTop: '1rem', color: 'var(--text-gray)', fontSize: '0.9375rem' }}>
+                      Some people may experience a brief episode of pain, followed by a sudden gush of blood or a clot, even weeks later. 
+                      If this continues, please contact us.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Accordion>
+              </Accordion>
             </div>
 
             {/* Pain Management */}
             <div className="mobile-accordion-wrapper animate-fade-in-up" style={{ marginBottom: '2rem' }}>
               <Accordion title="Pain During an Early Medical Abortion">
-                <div className="card" style={{ marginBottom: 0, padding: '1.5rem' }}>
-              <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
-                Most people are able to continue with everyday activities following the first pill, called Mifepristone.
-              </p>
-              <p style={{ marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
-                Following the second pill (Misoprostol), you may experience lower abdominal pain or cramping, along with 
-                vaginal bleeding. For most people, the pain is manageable, but in some cases, it can be more intense and 
-                may require strong pain relief, like codeine.
-              </p>
-              <p style={{ marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
-                The pain can be intense when the pregnancy is passing, this is normal and usually happens within 
-                <strong> 2 to 4 hours</strong>, but it can happen sooner or later too. The pain can also be in your back, 
-                thighs and tops of your legs.
-              </p>
+                <div>
+                  <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
+                    Most people are able to continue with everyday activities following the first pill, called Mifepristone.
+                  </p>
+                  <p style={{ marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
+                    Following the second pill (Misoprostol), you may experience lower abdominal pain or cramping, along with 
+                    vaginal bleeding. For most people, the pain is manageable, but in some cases, it can be more intense and 
+                    may require strong pain relief, like codeine.
+                  </p>
+                  <p style={{ marginBottom: '1.5rem', color: 'var(--text-gray)' }}>
+                    The pain can be intense when the pregnancy is passing, this is normal and usually happens within 
+                    <strong> 2 to 4 hours</strong>, but it can happen sooner or later too. The pain can also be in your back, 
+                    thighs and tops of your legs.
+                  </p>
 
-              <div style={{ 
-                padding: '1.5rem', 
-                backgroundColor: 'var(--soft-blue)', 
-                borderRadius: '8px'
-              }}>
-                <h3 style={{ 
-                  color: 'var(--primary-blue)', 
-                  marginBottom: '1rem',
-                  fontSize: '1.25rem'
-                }}>
-                  Pain Relief For Your Abortion
-                </h3>
-                <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
-                  It is important that you have pain medication ready at home. Our team will talk to you about pain relief 
-                  during your consultation. The best pain relief for you will depend on your medical history. Always check 
-                  the labels for instructions and medical guidance.
-                </p>
-                <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
-                  Using a hot water bottle or having a warm bath can also help.
-                </p>
-                <p style={{ color: 'var(--text-gray)' }}>
-                  Once the pregnancy has been passed, any pain that you may have usually reduces. However, if the pain is 
-                  still too much, please contact us. Some mild cramps might continue for a few days to a week, and these 
-                  should be manageable with regular pain relief.
-                </p>
-              </div>
+                  <div style={{ 
+                    padding: '1.5rem', 
+                    backgroundColor: 'var(--soft-blue)', 
+                    borderRadius: '8px'
+                  }}>
+                    <h3 style={{ 
+                      color: 'var(--primary-blue)', 
+                      marginBottom: '1rem',
+                      fontSize: '1.25rem'
+                    }}>
+                      Pain Relief For Your Abortion
+                    </h3>
+                    <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
+                      It is important that you have pain medication ready at home. Our team will talk to you about pain relief 
+                      during your consultation. The best pain relief for you will depend on your medical history. Always check 
+                      the labels for instructions and medical guidance.
+                    </p>
+                    <p style={{ marginBottom: '1rem', color: 'var(--text-gray)' }}>
+                      Using a hot water bottle or having a warm bath can also help.
+                    </p>
+                    <p style={{ color: 'var(--text-gray)' }}>
+                      Once the pregnancy has been passed, any pain that you may have usually reduces. However, if the pain is 
+                      still too much, please contact us. Some mild cramps might continue for a few days to a week, and these 
+                      should be manageable with regular pain relief.
+                    </p>
+                  </div>
+                </div>
+              </Accordion>
             </div>
 
             {/* How to Access */}
